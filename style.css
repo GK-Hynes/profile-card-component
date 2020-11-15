@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
-.card {
+.profile-card {
   width: 100%;
   max-width: 350px;
   background-color: #fff;
@@ -41,18 +41,18 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.card__top {
+.profile-card__top {
   background: url(./images/bg-pattern-card.svg);
   height: 140px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.card__profile {
+.profile-card__profile {
   border-bottom: 2px solid #ececec;
 }
 
-.card__image {
+.profile-card__image {
   display: block;
   margin: -55px auto 1.25rem auto;
   width: 110px;
@@ -61,36 +61,36 @@ body {
   border: 5px solid #fff;
 }
 
-.card__name {
+.profile-card__name {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
   color: var(--very-dark-desaturated-blue);
 }
 
-.card__age {
+.profile-card__age {
   color: var(--dark-gray);
   font-weight: 400;
 }
 
-.card__location {
+.profile-card__location {
   color: var(--dark-grayish-blue);
   margin-bottom: 1.5rem;
   font-size: 0.825rem;
 }
 
-.card__details {
+.profile-card__details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1.75rem 2rem 1.5rem 2rem;
 }
 
-.card__stat {
+.profile-card__stat {
   font-weight: 700;
   font-size: 1.125rem;
   color: var(--very-dark-desaturated-blue);
 }
 
-.card__stat--details {
+.profile-card__stat--details {
   display: block;
   margin-top: 0.5rem;
   font-weight: 400;
@@ -104,7 +104,8 @@ body {
   padding: 0.5rem;
   text-align: center;
 }
-.footer a {
+
+.footer__link {
   color: hsl(228, 45%, 44%);
 }
 

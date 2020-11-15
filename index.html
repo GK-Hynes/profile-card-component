@@ -16,28 +16,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card__top"></div>
-        <div class="card__profile">
+      <div class="profile-card">
+        <div class="profile-card__top"></div>
+        <div class="profile-card__profile">
           <img
-            class="card__image"
+            class="profile-card__image"
             src="./images/image-victor.jpg"
             alt="Victor"
           />
-          <h3 class="card__name">
-            Victor Crest <span class="card__age">26</span>
+          <h3 class="profile-card__name">
+            Victor Crest <span class="profile-card__age">26</span>
           </h3>
-          <p class="card__location">London</p>
+          <p class="profile-card__location">London</p>
         </div>
-        <div class="card__details">
-          <div class="card__stat">
-            80K<span class="card__stat--details">Followers</span>
+        <div class="profile-card__details">
+          <div class="profile-card__stat">
+            <h4>
+              80K<span class="profile-card__stat--details">Followers</span>
+            </h4>
           </div>
-          <div class="card__stat">
-            803K<span class="card__stat--details">Likes</span>
+          <div class="profile-card__stat">
+            <h4>803K<span class="profile-card__stat--details">Likes</span></h4>
           </div>
-          <div class="card__stat">
-            1.4K<span class="card__stat--details">Photos</span>
+          <div class="profile-card__stat">
+            <h4>1.4K<span class="profile-card__stat--details">Photos</span></h4>
           </div>
         </div>
       </div>
@@ -45,9 +47,14 @@
 
     <footer class="footer">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="footer__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/GK-Hynes">Gerard Hynes</a>.
+      >. Coded by
+      <a class="footer__link" href="https://github.com/GK-Hynes">Gerard Hynes</a
+      >.
     </footer>
   </body>
 </html>
