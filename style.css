@@ -23,18 +23,18 @@ body {
 .container {
   width: 100%;
   height: calc(100vh - 2rem);
+  padding: 1.5rem;
   display: grid;
   place-items: center;
   background-image: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: top 200% left -50%, bottom 200% right -50%;
-  background-repeat: no-repeat;
+  background-position: top -600px left -750px, bottom -600px right -750px;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .card {
   width: 100%;
   max-width: 350px;
-  margin: 1.5rem;
   background-color: #fff;
   border-radius: 1rem;
   text-align: center;
@@ -79,10 +79,9 @@ body {
 }
 
 .card__details {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1.75rem;
-  padding-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.75rem 2rem 1.5rem 2rem;
 }
 
 .card__stat {
@@ -107,4 +106,10 @@ body {
 }
 .footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .container {
+    background-position: top -500px left -285px, bottom -625px right -250px;
+  }
 }
